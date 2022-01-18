@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="aplication-name" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="generator" content="VS Code">
+        <meta name="author" content="Matheus Ramalho">
+        <meta name="copyright" content="Matheus Ramalho">
+
+        <title> Bhaskara JS </title>
+
+        <!-- STYLES... -->
+        <link type="image/png" rel="shortcut icon" href="">
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap">
+    </head>
+
+    <body class="body__">
+        <main class="main__">
+            <div class="calc__title">
+                <h1> Formula de Bhaskara </h1>
+            </div>
+
+            <div class="calc__values">
+                <form class="form__" method="" action="">
+                    <fieldset class="form__fieldset" name="">
+                        <legend> Informe os valores </legend>
+
+                        <div class="form__group">
+                            <div class="form__item">
+                                <label for="valueA"> A </label>
+                                <input id="valueA" type="number" name="" value="" required>
+                            </div>
+
+                            <div class="form__item">
+                                <label for="valueB"> B </label>
+                                <input id="valueB" type="number" name="" value="" required>
+                            </div>
+
+                            <div class="form__item">
+                                <label for="valueC"> C </label>
+                                <input id="valueC" type="number" name="" value="" required>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__item">
+                                <button class="bhaskara__" type="submit" onclick="calculateDelta()"> Calcular </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="calc__results">
+                <h5> Resultado Delta </h5>
+
+                <div class="calc__delta">
+                    <!-- <input class="delta__l1" type="text" name="" value="" disabled>
+                    <input class="delta__l2" type="text" name="" value="" disabled>
+                    <input class="delta__mensagem" type="text" name="" value="" disabled> -->
+
+                    <div class="delta__l1"> ∆ = (b * b) - (4 * a * c) </div>
+                    <div class="delta__l2"> ∆ = delta </div>
+                    <div class="delta__mensagem"></div>
+                </div>
+            </div>
+
+            <div class="calc__results">
+                <h5> Resultado X1 & X2 </h5>
+
+                <div class="calc__raiz"></div>
+                    <span class="x__l1"></span>
+                    <span class="x__l2"></span>
+                    <span class="x__l3"></span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer__">
+            <span class="copyright__"> &copy; Matheus Ramalho. Todos os direitos reservados. </span>
+            <a href="https://matheusramalho.dev"> matheusramalho.dev </a>
+        </footer>
+
+        <!-- JAVASCRIPT... -->
+        <script type="module" src="src/js/script.js"></script>
+    </body>
+</html>

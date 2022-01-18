@@ -1,0 +1,162 @@
+
+body {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__ {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    overflow: hidden;
+    background-color: $blackDark;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__ {
+    width: 100%;
+    height: 5rem;
+    padding: 0 5rem;
+    border-top: 0.063rem solid $blackRegular;
+    background-color: $blackDark;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    span {
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    a {
+        font-size: 0.9rem;
+
+        &:hover {
+            color: $colorRegular;
+        }
+    }
+}
+
+.calc__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.calc__values {
+    form {
+        width: 500px;
+
+        fieldset {
+            padding: 1rem;
+            border: 0.063rem solid $blackRegular;
+            border-radius: 0.75rem;
+
+            legend {
+                padding: 0 1rem;
+                background-color: $blackDark;
+            }
+
+            .form__group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .form__item {
+                    min-width: 120px;
+                    max-width: 120px;
+                    margin: 0.5rem;
+
+                    label {
+                        padding-left: 0.3rem;
+
+                        font-weight: 500;
+                        color: $white;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 2rem;
+                        margin-top: 0.5rem;
+                        padding: 0 0.5rem;
+                        border: none;
+                        border-radius: 0.44rem;
+                        background-color: $blackRegular;
+
+                        color: $white;
+
+                        &[type=number]::-webkit-inner-spin-button,
+                        &[type=number]::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                        }
+                    }
+
+                    button {
+                        cursor: pointer;
+                        width: 100%;
+                        height: auto;
+                        margin-top:1rem;
+                        padding: 0.5rem 1.5rem;
+                        border: none;
+                        border-radius: 0.75rem;
+                        background-color: $colorRegular;
+                        transition: 1s background ease-in-out;
+
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $blackRegular;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: $colorDark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.calc__results {
+    width: 500px;
+    margin: 2rem 0;
+    padding: 2rem;
+    border: 0.063rem solid $blackRegular;
+    border-radius: 0.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h5 {
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+        height: 2rem;
+        margin: 0.5rem 0;
+        padding: 0 0.5rem;
+        border: none;
+        border-radius: 0.44rem;
+        background-color: $blackRegular;
+
+        color: $white;
+    }
+
+    .calc__delta {
+        div {
+            margin: 1rem 0;
+        }
+    }
+}
